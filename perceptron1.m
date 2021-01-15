@@ -21,7 +21,7 @@ while error > 0
        if Y(i) ~= sign(X(i,:)*w)
            error = error + 1;
            iter = iter + 1;
-           disp(iter);
+           %disp(iter);
            w = w + X(i,:)'*Y(i);
        end
    end   
